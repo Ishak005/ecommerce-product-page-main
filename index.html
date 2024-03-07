@@ -7,39 +7,73 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>E-commerce product page</title>
 </head>
 <body>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <nav>
+    <section id="left" class="left">
+        <div class="names" id="names">
+          <span class="logo">sneakers</span>
+          <div class="list-select">
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </div>
+        </div>
+        <div class="profile" id="profile">
+          <img src="images/icon-cart.svg" class="icon" id="icon" alt="cart">
+          <img src="images/image-avatar.png" class="icon" id="icon" alt="cart">
+        </div>
+    </section>
+    <section id="right" class="right"></section>
+  </nav>
 
-  Sneaker Company
 
-  Fall Limited Edition Sneakers
+  <main>
+    <div class="mainleft" id="mainleft">
+      <div class="product-display" id="product-display">
+        <img src="images/image-product-1-thumbnail.jpg" alt="product-display">
+        <div class="thumbnail" id="thumbnail">
+          <img src="images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail">
+          <img src="images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail">
+          <img src="images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail">
+          <img src="images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail">
+        </div>
+      </div>
+    </div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
 
-  $125.00
-  50%
-  $250.00
+    <div class="mainright" id="mainright">
+      <span class="logo">SNEAKER COMPANY</span>
+      <h2>Fall Limited Edition <br> Sneakers</h2>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
 
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class="price" id="price">
+          <div class="pricein">
+            <span id="current-price">$125.00</span>
+            <span id="discount">50%</span>
+          </div>
+          <span id="previous-price">$350.00</span>
+        </div>
+        
+        <div class="cart-add-box">
+        <div class="quantity-add-box">
+          <img src="images/icon-minus.svg" id="quantitydecrement" alt="decrement">
+          <p id="quantityvalue">0</p>
+          <img src="images/icon-plus.svg" id="quantityincrement" alt="increment">
+        </div>
+        <div class="addcart" id="addcart"><img src="images/icon-cart.svg" alt="addtocart">Add to cart</div>
+      </div>
+
+
+    </div>
+  </main>
+
+
+  <script src="index.js"></script>
 </body>
 </html>
